@@ -25,5 +25,5 @@ Svelte documentation: [GitHub-Pages](https://kit.svelte.dev/docs/adapter-static#
 ```
 pnpm dev #start local dev environment
 pnpm build #generate static files in .svelte-kit/build directory
-pnpm deploy #commit static files to gh-pages branch
+pnpm run deploy #commit static files to gh-pages branch
 ```
