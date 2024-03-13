@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+		<div style="width: 100px; height: 100px;" id="morph"></div>
+	</body>
+</html>
+<script>
+    let colors = ['red', 'green', 'blue']; // Define an array of colors
+    let colorIndex = 0; // Start with the first color
+
+    // Function to change the background color
+    function changeBackgroundColor() {
+        colorIndex = (colorIndex + 1) % colors.length; // Cycle through the colors
+        document.getElementById("morph").style.backgroundColor = colors[colorIndex]; // Update the background color
+    }
+
+    // Set an interval to change the background color every 3 seconds
+    setInterval(changeBackgroundColor, 3000);</script>
+
+<style>
+    :root {
+        --bg-color: {bgColor};
+    }
+
+    #morph {
+		margin: auto;
+		background-color: red; /* Start with a default color */
+    	transition: background-color 2s ease-in-out; /* Define the transition */
+    }
+</style>
