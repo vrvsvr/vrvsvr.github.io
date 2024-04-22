@@ -1,0 +1,1 @@
+Generated(Simple): prompt: scifi lasers beams, seed_image: motorway, seed: 1708365252, strength: 0.750000, scale: 7.500000, steps: 20, scheduler: EulerDiscreteScheduler
